@@ -2,8 +2,29 @@ html {
   font-family: sans-serif;
 }
 
-.wrapper {
+.wrapper,
+.flex {
   display: flex;
+}
+
+.flex {
+  padding: 5px;
+  width: calc(100% - 5px);
+}
+.flex div {
+  flex: 0 0 45%;
+  text-align: left;
+  border: 1px gray solid;
+  border-radius: 5px;
+  background:whitesmoke;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 0 0 2.5px;
+}
+
+.flex div:first-child {
+  margin: 0 2.5px 0 0;
+
 }
 
 nav {
